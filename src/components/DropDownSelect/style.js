@@ -49,10 +49,6 @@ export const DropDownList = styled("ul")`
   box-sizing: border-box;
   border-radius: 8px;
 
-  :first-child {
-    background-color: red;
-  }
-
   :hover {
     cursor: pointer;
   }
