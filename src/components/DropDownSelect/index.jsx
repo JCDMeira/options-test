@@ -19,7 +19,12 @@ function DropDownSelect({ initialOption, allOptions, setOption }) {
         <S.DropDownListContainer>
           <S.DropDownList>
             {allOptions.map((option, index) => (
-              <S.ListItem onClick={onOptionClicked(option)} key={index}>
+              <S.ListItem
+                onClick={onOptionClicked(option)}
+                key={index}
+                isFirst={index === 0}
+                isLast={index === allOptions.length - 1}
+              >
                 {option}
               </S.ListItem>
             ))}

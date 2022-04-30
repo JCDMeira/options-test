@@ -42,6 +42,8 @@ export const DropDownList = styled("ul")`
   width: 384px;
   margin: 0;
   padding: 0;
+  position: relative;
+  z-index: 9999;
 
   background: #fff;
 
@@ -65,6 +67,8 @@ export const ListItem = styled("li")`
 
   color: #999999;
 
+  border-radius: ${(props) =>
+    (props.isFirst && "8px 8px 0 0") || (props.isLast && "0 0 8px 8px")};
   padding: 13px 16px;
 
   :hover {
