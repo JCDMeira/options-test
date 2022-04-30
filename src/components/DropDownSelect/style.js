@@ -4,19 +4,20 @@ export const DropDownContainer = styled("div")`
   width: 383px;
   height: 40px;
 
-  background: #ffffff;
+  background: black;
+  border-radius: 8px;
 
   margin: 100px auto;
 `;
 
 export const DropDownHeader = styled("div")`
-  font-family: "Lato";
+  font-family: sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
 
-  color: #999999;
+  color: white;
 
   padding: 13px 16px;
 
@@ -45,7 +46,7 @@ export const DropDownList = styled("ul")`
   position: relative;
   z-index: 9999;
 
-  background: #fff;
+  background: black;
 
   border: 1px solid #cccccc;
   box-sizing: border-box;
@@ -59,20 +60,20 @@ export const DropDownList = styled("ul")`
 export const ListItem = styled("li")`
   list-style: none;
 
-  font-family: "Lato";
+  font-family: sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
 
-  color: #999999;
+  color: white;
 
   border-radius: ${(props) =>
     (props.isFirst && "8px 8px 0 0") || (props.isLast && "0 0 8px 8px")};
   padding: 13px 16px;
 
   :hover {
-    background: #2328eb;
+    background: tomato;
     cursor: pointer;
   }
 `;
